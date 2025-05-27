@@ -12,9 +12,9 @@ export default {
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 12070, hash: 'dbb0f09fa97ee53d27eb7b9f9252989c3cce72df890094bdf4f43db9a4e3e32f', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 12197, hash: '90aa9594b5ef0675d3b68ab572b4d42ae71ca4e7666114a5256bac681ae9d781', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'index.html': {size: 58693, hash: '249b1f6b459ddcac3f8cdd8e5e198445ddc6ff06ad1c98a4d400f3d1c91af7ec', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 12064, hash: 'bc64dc4f78184825502d76f289fa3e3f31054843aaf837c2559113dc2a75f3d7', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 12191, hash: '519afc901de7ec43fb5b6de6a14b4b2c9bf0a9dd0d461e5e86c5c8531fef9ad7', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'index.html': {size: 58687, hash: 'a538faa6f68425565daccdc20cbca2b499032aa1b9fec0497acece1d3154742b', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
     'styles-SDCDEH6E.css': {size: 663, hash: '3eB3LuSeJZU', text: () => import('./assets-chunks/styles-SDCDEH6E_css.mjs').then(m => m.default)}
   },
 };
