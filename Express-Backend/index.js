@@ -1,6 +1,6 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
-const Filter = require('bad-words');
+const leoProfanity = require('leo-profanity');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const cors = require('cors');
@@ -11,8 +11,6 @@ app.use(cors({
   origin: 'http://localhost:4200' // or use '*' to allow all, but not recommended for production
 }));
 app.use(express.json());
-
-const filter = new Filter();
 
 app.post('/message', async (req, res) => {
   console.log('Received message:', req.body);
@@ -27,8 +25,8 @@ app.post('/message', async (req, res) => {
     input = input.replace(/on\w+\s*=\s*(['"]).*?\1/gi, '');
     // Remove javascript: in href/src
     input = input.replace(/javascript:/gi, '');
-    // Remove insults using bad-words library
-    input = filter.clean(input);
+    // Remove insults using leo-profanity
+    input = leoProfanity.clean(input);
     return input;
   }
 
