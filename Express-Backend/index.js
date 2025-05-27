@@ -20,11 +20,19 @@ app.post('/message', async (req, res) => {
   function sanitize(input) {
     if (typeof input !== 'string') return '';
     // Remove script tags
-    input = input.replace(/<script.*?>.*?<\/script>/gi, '');
+    // Remove script tags
+    input = input.replace(/<script.*?>.*?<\/script>/gis, '');
     // Remove on* attributes (e.g., onclick, onerror)
     input = input.replace(/on\w+\s*=\s*(['"]).*?\1/gi, '');
     // Remove javascript: in href/src
     input = input.replace(/javascript:/gi, '');
+    // Remove all HTML tags
+    input = input.replace(/<[^>]*>/g, '');
+    // Remove CSS style tags and inline styles
+    input = input.replace(/<style.*?>.*?<\/style>/gis, '');
+    input = input.replace(/style\s*=\s*(['"]).*?\1/gi, '');
+    // Remove suspicious characters/sequences (e.g., backticks, ${}, <, >, &)
+    input = input.replace(/[`$<>{}]/g, '');
     // Remove insults using leo-profanity
     input = leoProfanity.clean(input);
     return input;
@@ -43,8 +51,8 @@ app.post('/message', async (req, res) => {
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'esmailian98@gmail.com',
-      pass: 'fble hzol wvmf awdk' // Use App Password, not your real Gmail password
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS // Set these in your environment variables
     }
   });
 
