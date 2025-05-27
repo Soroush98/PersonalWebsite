@@ -68,13 +68,6 @@ import { CommonModule } from "@angular/common"
           </div>
         </div>
         
-        <div class="philosophy">
-          <blockquote>
-            "I believe that great software is not just about writing code—it's about understanding 
-            user needs, solving real problems, and continuously learning new technologies to stay 
-            at the forefront of innovation."
-          </blockquote>
-        </div>
       </div>
     </section>
   `,
