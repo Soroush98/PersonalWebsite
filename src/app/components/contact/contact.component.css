@@ -199,6 +199,12 @@
   font-size: 1.2rem;
 }
 
+.confirmation-message {
+  color: red;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .contact-content {
     grid-template-columns: 1fr;
