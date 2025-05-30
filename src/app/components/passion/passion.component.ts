@@ -25,7 +25,7 @@ import { CommonModule } from "@angular/common"
               <div class="passion-point">
                 <div class="icon">🎨</div>
                 <div class="content">
-                  <h4>Frontend Excellence</h4>
+                  <h4>Frontend</h4>
                   <p>Creating fault-tolerant, responsive interfaces that users love to interact with using modern frameworks like Angular, Next.js, and Vue.js.</p>
                 </div>
               </div>
@@ -33,7 +33,7 @@ import { CommonModule } from "@angular/common"
               <div class="passion-point">
                 <div class="icon">⚙️</div>
                 <div class="content">
-                  <h4>Backend Mastery</h4>
+                  <h4>Backend</h4>
                   <p>Building robust, scalable server-side applications with Django, Express.js, Java and cloud technologies that power amazing user experiences.</p>
                 </div>
               </div>
@@ -48,25 +48,7 @@ import { CommonModule } from "@angular/common"
             </div>
           </div>
           
-          <div class="passion-stats">
-            <div class="stat-card">
-              <h3>1+</h3>
-              <p>Years of Experience</p>
-            </div>
-            <div class="stat-card">
-              <h3>20+</h3>
-              <p>Projects Completed</p>
-            </div>
-            <div class="stat-card">
-              <h3>15+</h3>
-              <p>Technologies Mastered</p>
-            </div>
-            <div class="stat-card">
-              <h3>100%</h3>
-              <p>Passion Driven</p>
-            </div>
-          </div>
-        </div>
+      </div>
         
       </div>
     </section>

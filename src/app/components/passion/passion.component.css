@@ -19,7 +19,7 @@
 
 .passion-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr;
   gap: 4rem;
   margin-bottom: 4rem;
 }
@@ -81,16 +81,6 @@
   margin-bottom: 0.5rem;
 }
 
-.passion-point .content p {
-  color: #6b7280;
-  line-height: 1.6;
-}
-
-.passion-stats {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
 
 .stat-card {
   background: white;
@@ -120,52 +110,11 @@
   margin: 0;
 }
 
-.philosophy {
-  background: white;
-  padding: 3rem;
-  border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.philosophy blockquote {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #374151;
-  font-style: italic;
-  position: relative;
-  margin: 0;
-}
-
-.philosophy blockquote::before {
-  content: '"';
-  font-size: 4rem;
-  color: #2563eb;
-  position: absolute;
-  top: -1rem;
-  left: -1rem;
-  font-family: serif;
-}
-
-.philosophy blockquote::after {
-  content: '"';
-  font-size: 4rem;
-  color: #2563eb;
-  position: absolute;
-  bottom: -2rem;
-  right: -1rem;
-  font-family: serif;
-}
 
 @media (max-width: 768px) {
   .passion-content {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-
-  .passion-point {
-    flex-direction: column;
-    text-align: center;
   }
 
   .passion-point .icon {
@@ -174,18 +123,5 @@
 
   .section-title {
     font-size: 2rem;
-  }
-
-  .philosophy {
-    padding: 2rem;
-  }
-
-  .philosophy blockquote {
-    font-size: 1.1rem;
-  }
-
-  .philosophy blockquote::before,
-  .philosophy blockquote::after {
-    font-size: 3rem;
   }
 }

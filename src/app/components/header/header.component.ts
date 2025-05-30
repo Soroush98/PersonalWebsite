@@ -13,9 +13,9 @@ import { CommonModule } from "@angular/common"
         </div>
         <nav class="nav" [class.active]="isMenuOpen">
           <a href="#home" (click)="closeMenu()">Home</a>
-          <a href="#passion" (click)="closeMenu()">About</a>
-          <a href="#skills" (click)="closeMenu()">Skills</a>
           <a href="#projects" (click)="closeMenu()">Projects</a>
+          <a href="#skills" (click)="closeMenu()">Skills</a>
+          <a href="#passion" (click)="closeMenu()">About</a>
           <a href="#education" (click)="closeMenu()">Education</a>
           <a href="#contact" (click)="closeMenu()">Contact</a>
         </nav>

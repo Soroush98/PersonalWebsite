@@ -3,8 +3,7 @@ import { CommonModule } from "@angular/common"
 
 interface Skill {
   name: string
-  level: number
-  category: string
+  level: "Beginner" | "Intermediate" | "Advanced"
 }
 
 @Component({
@@ -22,10 +21,17 @@ interface Skill {
               <div class="skill-item" *ngFor="let skill of category.skills">
                 <div class="skill-info">
                   <span class="skill-name">{{ skill.name }}</span>
-                  <span class="skill-percentage">{{ skill.level }}%</span>
                 </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" [style.width.%]="skill.level"></div>
+                <div class="skill-level-bar">
+                  <div class="level-segment beginner" [class.active]="skill.level === 'Beginner'">
+                    Beginner
+                  </div>
+                  <div class="level-segment intermediate" [class.active]="skill.level === 'Intermediate'">
+                    Intermediate
+                  </div>
+                  <div class="level-segment advanced" [class.active]="skill.level === 'Advanced'">
+                    Advanced
+                  </div>
                 </div>
               </div>
             </div>
@@ -41,31 +47,44 @@ export class SkillsComponent {
     {
       name: "Frontend",
       skills: [
-        { name: "Next.js", level: 90 },
-        { name: "Angular", level: 75 },
-        { name: "TypeScript", level: 85 },
-        { name: "Tailwind CSS", level: 80 },
-        { name: "Vue.js", level: 65 },
+        { name: "Next.js", level: "Advanced" },
+        { name: "Angular", level: "Intermediate" },
+        { name: "TypeScript", level: "Advanced" },
+        { name: "Tailwind CSS", level: "Advanced" },
+        { name: "Vue.js", level: "Intermediate" },
       ],
     },
     {
       name: "Backend",
       skills: [
-        { name: "Django", level: 80 },
-        { name: "Express.js", level: 70 },
-        { name: "Java", level: 95 },
-        { name: "DynamoDB", level: 85 },
-        { name: "S3", level: 80 },
+        { name: "Django", level: "Advanced" },
+        { name: "Express.js", level: "Intermediate" },
+        { name: "Java", level: "Advanced" },
+        { name: "DynamoDB", level: "Advanced" },
+        { name: "S3", level: "Advanced" },
       ],
     },
     {
       name: "Tools & Others",
       skills: [
-        { name: "Git", level: 90 },
-        { name: "Docker", level: 65 },
-        { name: "AWS", level: 85 },
-        { name: "Figma", level: 80 },
+        { name: "Git", level: "Advanced" },
+        { name: "Docker", level: "Intermediate" },
+        { name: "AWS", level: "Advanced" },
+        { name: "Figma", level: "Advanced" },
       ],
     },
   ]
+
+  getSkillLevelClass(level: string): string {
+    switch (level) {
+      case "Beginner":
+        return "beginner"
+      case "Intermediate":
+        return "intermediate"
+      case "Advanced":
+        return "advanced"
+      default:
+        return ""
+    }
+  }
 }
