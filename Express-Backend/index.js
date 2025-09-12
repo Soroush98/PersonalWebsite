@@ -58,11 +58,11 @@ app.post('/message', async (req, res) => {
 
   try {
     await transporter.sendMail({
-      from: `"A message was sent from ${name} with Email: " <${email}>`,         // Sender info
-      to: 'esmailian98@gmail.com',          // Your email
+      from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`, // MUST be your Gmail
+      to: 'esmailian98@gmail.com',
       subject: subject,
-      text: message,
-      replyTo: email
+      text: `From: ${name} (${email})\n\n${message}`,
+      replyTo: email // user's email for reply
     });
     res.json({ success: true, message: 'Email sent successfully.' });
   } catch (err) {
