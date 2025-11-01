@@ -11,7 +11,6 @@ import { CommonModule } from "@angular/common"
         <div class="footer-content">
           <div class="footer-section">
             <h3>Soroosh Esmaeilian</h3>
-            <p>Full Stack Developer passionate about creating amazing web experiences.</p>
           </div>
           <div class="footer-section">
             <h4>Quick Links</h4>

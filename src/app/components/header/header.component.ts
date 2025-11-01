@@ -20,9 +20,7 @@ import { CommonModule } from "@angular/common"
           <a href="#contact" (click)="closeMenu()">Contact</a>
         </nav>
         <div class="header-actions">
-          <a href="/Soroosh_Esmaeilian_FullStack.pdf" download="Soroosh_Esmaeilian_Resume.pdf" class="resume-btn">
-            Download Resume
-          </a>
+       
           <button class="menu-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
             <span></span>
             <span></span>

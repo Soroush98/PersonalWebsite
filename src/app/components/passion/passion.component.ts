@@ -8,17 +8,10 @@ import { CommonModule } from "@angular/common"
   template: `
     <section id="passion" class="passion">
       <div class="container">
-        <h2 class="section-title">My Passion for Full Stack Development</h2>
         <div class="passion-content">
           <div class="passion-text">
             <div class="passion-intro">
-              <h3>Why Full Stack Development?</h3>
-              <p>
-                Full stack development represents the perfect blend of creativity and logic, 
-                allowing me to bring complete ideas to life from conception to deployment. 
-                I'm passionate about understanding every layer of web applications and how 
-                they work together to create seamless user experiences.
-              </p>
+              <h2 class="passion-title">My Passion</h2>
             </div>
             
             <div class="passion-points">

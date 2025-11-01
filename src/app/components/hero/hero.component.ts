@@ -13,16 +13,13 @@ import { CommonModule } from "@angular/common"
             <h1 class="hero-title">
               Hi, I'm <span class="highlight">Soroosh Esmaeilian</span>
             </h1>
-            <h2 class="hero-subtitle">Full Stack Developer</h2>
             <p class="hero-description">
               Passionate about creating innovative web solutions using cutting-edge technologies.
               I transform ideas into powerful, scalable applications that make a difference.
             </p>
             <div class="hero-buttons">
               <a href="#projects" class="btn btn-primary">View My Work</a>
-              <a href="/Soroosh_Esmaeilian_FullStack.pdf" download="Soroosh_Esmaeilian_Resume.pdf" class="btn btn-secondary">
-                Download Resume
-              </a>
+             
             </div>
           </div>
           <div class="hero-image">
