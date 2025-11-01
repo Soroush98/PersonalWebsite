@@ -2,10 +2,10 @@ export default `<!doctype html>
 <html lang="en" data-beasties-container="">
 <head>
   <meta charset="utf-8">
-  <title>Soroosh Esmaeilian - Full Stack Developer</title>
+  <title>Soroosh Esmaeilian</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Soroosh Esmaeilian - Full Stack Developer passionate about creating amazing web experiences">
+  <meta name="description" content="Soroosh Esmaeilian  Personal Portfolio Website">
   <link rel="icon" type="image/png" href="Logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -22,6 +22,6 @@ export default `<!doctype html>
 <style>*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;line-height:1.6;color:#333}*{transition:all .3s ease}*:focus{outline:2px solid #2563eb;outline-offset:2px}</style><link rel="stylesheet" href="styles-SDCDEH6E.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-SDCDEH6E.css"></noscript></head>
 <body ngcm="">
   <app-root></app-root>
-<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-ZHHCOJEI.js" type="module"></script></body>
+<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-NESYU4QC.js" type="module"></script></body>
 </html>
 `;
