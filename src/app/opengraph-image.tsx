@@ -22,7 +22,7 @@ export default function Image() {
         }}
       >
         <div style={{ fontSize: 36, opacity: 0.85, marginBottom: 24 }}>
-          sorooshes98.com
+          www.sorooshes98.com
         </div>
         <div style={{ fontSize: 84, fontWeight: 700, lineHeight: 1.1 }}>
           Soroosh Esmaeilian

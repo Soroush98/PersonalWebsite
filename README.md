@@ -1,6 +1,6 @@
 # PersonalWebsite
 
-My personal website. Production deployment at [sorooshes98.com](https://sorooshes98.com).
+My personal website. Production deployment at [www.sorooshes98.com](https://www.sorooshes98.com).
 
 Built with [Next.js](https://nextjs.org) 16 (App Router) + TypeScript + Tailwind.
 

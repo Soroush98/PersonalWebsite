@@ -10,7 +10,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = "https://sorooshes98.com";
+const SITE_URL = "https://www.sorooshes98.com";
 const SITE_NAME = "Soroosh Esmaeilian";
 const SITE_DESCRIPTION =
   "Soroosh Esmaeilian — applied AI and full-stack engineer. I ship end-to-end products built on LLMs, messy real-world data, and cloud infrastructure.";
