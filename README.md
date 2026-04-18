@@ -1,40 +1,33 @@
 # PersonalWebsite
 
-This is my personal website. The production deployment is available at [sorooshes98.com](https://sorooshes98.com).
+My personal website. Production deployment at [sorooshes98.com](https://sorooshes98.com).
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+Built with [Next.js](https://nextjs.org) 16 (App Router) + TypeScript + Tailwind.
 
-## Development server
-
-To start a local development server, run:
+## Development
 
 ```bash
-ng serve
+npm install
+cp .env.example .env.local   # fill in EMAIL_USER / EMAIL_PASS (Gmail app password, no spaces)
+npm run dev
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Build
 
 ```bash
-ng generate component component-name
+npm run build
+npm run start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Contact form
 
-```bash
-ng generate --help
-```
+The `/api/message` route ([src/app/api/message/route.ts](src/app/api/message/route.ts))
+sanitizes input and sends mail via Gmail SMTP through Nodemailer. Required env vars:
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
+| Variable     | Purpose                                         |
+| ------------ | ----------------------------------------------- |
+| `EMAIL_USER` | Gmail address the message is sent from          |
+| `EMAIL_PASS` | Gmail [app password](https://myaccount.google.com/apppasswords) (16 chars, no spaces) |
+| `CONTACT_TO` | Destination inbox (defaults to `EMAIL_USER`)    |
